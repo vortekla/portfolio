@@ -1,0 +1,140 @@
+/* Style général */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* En-tête */
+header {
+  background: #007BFF;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Navigation */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Formulaire */
+
+
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="button"] {
+  background-color: #28A745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type="button"]:hover {
+  background-color: #218838;
+}
+
+/* Carte de visite */
+.carte {
+  background: white;
+  border: 2px solid #007BFF;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 300px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carte h1 {
+  margin: 10px 0;
+  color: #007BFF;
+}
+
+.carte h2 {
+  margin: 10px 0;
+  font-weight: normal;
+  color: #555;
+}
+
+.carte p {
+  margin: 10px 0 20px;
+}
+
+.carte ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.carte a {
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.carte a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+
+  header,
+  .carte {
+    padding: 15px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  input[type="button"] {
+    padding: 10px;
+  }
+
+  .espace {
+    margin-top: 30px;
+  }
+}
